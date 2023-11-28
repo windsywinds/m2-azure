@@ -26,6 +26,7 @@ async function getData(image) {
     return parsedData;
   } catch (error) {
     console.error("There is an error during fetch:", error);
+    return error;
   }
 }
 

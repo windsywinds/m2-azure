@@ -40,7 +40,7 @@ export const DisplayInput = ({ updateData, updateImage, updateDisplayMsg }) => {
       updateData(parsedData);
     } catch (error) {
       console.error("Error fetching data:", error);
-      // Handle error?, e.g., setDisplayMsg("Error fetching data: " + error);
+      updateDisplayMsg("There was an error.")
     }
   };
 
