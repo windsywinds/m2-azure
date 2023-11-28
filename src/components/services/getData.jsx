@@ -1,8 +1,8 @@
 import { useState } from "react";
 
 //Define our variables for Azure access
-const ApiKey = ${{ secrets.AZURE_API_KEY }};
-const AzureEndpoint = ${{ secrets.AZURE_API_ENDPOINT }};
+const ApiKey = import.meta.env.VITE_API_KEY;
+const AzureEndpoint = import.meta.env.VITE_ENDPOINT_NAME;
 
 async function getData(image) {
   try {
