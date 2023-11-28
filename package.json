@@ -4,12 +4,9 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "start": "nodemon server/server.cjs",
+    "start": "node server/server.cjs",
     "dev": "vite",
-    "build": "vite build",
-    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "prettier": "prettier . --write",
-    "preview": "vite preview"
+    "build": "vite build"
   },
   "dependencies": {
     "cors": "^2.8.5",
