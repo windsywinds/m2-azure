@@ -1,8 +1,8 @@
 import { useState } from "react";
 
 //Define our variables for Azure access
-const ApiKey = import.meta.env.VITE_API_KEY;
-const AzureEndpoint = import.meta.env.VITE_ENDPOINT_NAME;
+const ApiKey = ${{ secrets.AZURE_API_KEY }};
+const AzureEndpoint = ${{ secrets.AZURE_API_ENDPOINT }};
 
 async function getData(image) {
   try {
@@ -26,7 +26,6 @@ async function getData(image) {
     return parsedData;
   } catch (error) {
     console.error("There is an error during fetch:", error);
-    return error;
   }
 }
 
