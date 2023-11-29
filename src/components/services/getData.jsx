@@ -1,8 +1,8 @@
 import { useState } from "react";
 
 //Define our variables for Azure access
-const ApiKey = process.env.VITE_API_KEY;
-const AzureEndpoint = process.env.VITE_ENDPOINT_NAME;
+const ApiKey = import.meta.env.VITE_API_KEY;
+const AzureEndpoint = import.meta.env.VITE_ENDPOINT_NAME;
 
 async function getData(image) {
   try {
@@ -21,7 +21,7 @@ async function getData(image) {
       `${AzureEndpoint}computervision/imageanalysis:analyze?api-version=2023-02-01-preview&features=tags,caption,denseCaptions,objects`,
       fetchOptions,
     );
-    console.error("Fetch success");
+    console.error("Fetch complete");
     const parsedData = await response.json();
     return parsedData;
   } catch (error) {
