@@ -110,8 +110,8 @@ export const CarCard = ({ inputCar }) => {
             {inputCar.carColor.charAt(0).toUpperCase() +
               inputCar.carColor.slice(1)}
           </ul>
-          <a href="#" className="text-xs underline mt-auto">
-            Tell us more to improve your matches!{" "}
+          <a href="#" className="text-xs font-semi-bold underline mt-auto">
+            Tell us more to improve your matches &gt;&gt;{" "}
           </a>
         </section>
       )}
