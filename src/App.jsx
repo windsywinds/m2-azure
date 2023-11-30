@@ -2,6 +2,7 @@ import { useState } from "react";
 import { DisplayCards } from "./components/displayCards";
 import { DisplayInput } from "./components/displayInput";
 
+
 function App() {
   //We can use setState to define the state of changing variables
   const [data, setData] = useState();
